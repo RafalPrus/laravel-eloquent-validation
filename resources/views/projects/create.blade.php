@@ -16,3 +16,13 @@
     <br /><br />
     <button type="submit">Save</button>
 </form>
+@error('name')
+<ul>
+    <li>{{ $message }}</li>
+</ul>
+@enderror
+@error('description')
+<ul>
+    <li>{{ $message }}</li>
+</ul>
+@enderror
